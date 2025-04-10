@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --roboto-font: "Roboto", sans-serif;
+  --lilita-font: "Lilita One", cursive;
+  --oswald-font: "Oswald", sans-serif;
+
+  --light-black: #333333;
+  --light-white: #f5f5f5;
+  --light-red: #ff6b6b;
+  --light-grey: #d3d3d3;
+  --light-grey-2: #e0e0e0;
+  --white: #ffffff;
+  --yellow: #ffeb3b;
+  --greym: #999999;
+  --brown: #8b4513;
+  --bg-coffee: #c19a6b;
+}
+
+body,html{
+  font-size: 1rem;
+  font-family: var(--roboto-font);
+  font-weight: 300;
+}
+
+@media (max-width: 992px){
+  body,html{
+    font: size 0.875rem;
+}
+  
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--oswald-font);
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+p{
+  font-size: 16px;
+}
+
+a{
+  color: var(--light-black);
+  text-decoration: none;
+  --webkit-transition: all 400ms ease-in-out;
+  --moz-transition: all 400ms ease-in-out;
+  --o-transition: all 400ms ease-in-out;
+  --ms-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+  
+}
+
+/* Custom ScrollBar */
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--yellow);
+}
+
+/* Common button */
+
+.order-now{
+  color:var(--light-black);
+  background-color: var(--yellow);
+  border-color: var(--yellow);
+  padding: 15px, 38px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-family: var(--oswald-font);
+  vertical-align: middle;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+.order-now:hover,
+.order-now:focus{
+  color: var(--white);
+  background-color: transparent;
+  border-color: var(--white);
+}
+
+.btn_red{
+  color: var(--white);
+  background-color: var(--light-red);
+  border-color: var(--light-red);
+}
+
+.btn_red:hover,
+.btn_red:focus{
+  color: var(--light-red);
+  background-color: transparent;
+  border-color: var(--light-red);
+}
