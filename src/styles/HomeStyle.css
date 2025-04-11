@@ -1,0 +1,106 @@
+.hero_section{
+    position: relative;
+    background:url("../assets/hero/hero-1.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 170px;
+    padding-bottom: 90px;
+}
+
+.hero_section .price_badge{
+    background: url("../assets/hero/price-badge-yellow.png") no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 80px;
+    right:600px;
+    width: 180px;
+    height: 176px;
+    text-align: center;
+}
+
+.hero_section .badge_text{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero_section .badge_text .h4_x5{
+    font-size: 1.875rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero_section .badge_text .h3_lg{
+    font-size: 2.875rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+
+.hero_section .hero_text h1{
+    font-family: var(--lilita-font);
+    font-size: 7rem;
+    line-height: 1;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+.hero_section .hero_text h2{
+    font-family: var(--lilita-font);
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+
+.hero_section .hero_text p{
+    padding: 0.5%;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .hero_section {
+        padding-top: 120px;
+        padding-bottom: 70px;
+        background-attachment: scroll; /* better on mobile */
+    }
+
+    .hero_section .price_badge {
+        top: 40px;
+        right: 100px;
+        width: 140px;
+        height: 130px;
+    }
+
+    .hero_section .hero_text h1 {
+        font-size: 4rem;
+    }
+
+    .hero_section .hero_text p {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero_section {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+
+    .hero_section .price_badge {
+        top: 30px;
+        right: 20px;
+        width: 100px;
+        height: 90px;
+    }
+
+    .hero_section .hero_text h1 {
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+
+    .hero_section .hero_text p {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+}

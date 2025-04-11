@@ -90,10 +90,10 @@ a{
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
 }
-.order-now:hover,
-.order-now:focus{
+.order_now:hover,
+.order_now:focus{
   color: var(--white);
-  background-color: transparent;
+  background-color: rgb(255, 153, 0);
   border-color: var(--white);
 }
 
