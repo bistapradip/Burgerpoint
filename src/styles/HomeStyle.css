@@ -104,3 +104,131 @@
         letter-spacing: 1px;
     }
 }
+
+
+/* Home about 2.0 */
+
+.about_section {
+    padding-top: 80px;
+    padding-bottom: 300px;
+    background: url('../assets/about/about-1.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+}
+
+.about_section h2 {
+    font-size: 3.5 rem;
+}
+
+.about_section p {
+    color: var(--grey);
+    font-size: 19px;
+}
+
+.about_wrapper {
+    background-color: var(--yellow);
+    padding-top: 70px;
+    padding-bottom: 30px;
+
+}
+
+.about_box .about_icon img{
+    max-width: 25%;
+}
+
+.about_box h4 {
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 0.5008px;
+    margin-top: 10px;
+}
+
+@media (max-width:992px){
+    .about_section h2{
+        font-size: 2.5rem;
+    }
+    .about_section p{
+        padding: 20px 0;
+    }
+    .about_box p{
+        padding:0;
+    }   
+
+}
+
+
+/* Menu section */
+
+.menu_section {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.menu_section h2{
+    text-align: center;
+}
+
+.menu_section .para{
+    color: var(--grey);
+    padding: 10px 100px;
+    font-size: 16px;
+}
+
+.menu_section .card-img-top{
+    transition: all 500ms ease-in-out;
+}
+
+.menu_section .item_rating i{
+    color: var(--yellow);
+    padding-right: 5px;
+}
+
+.menu_section .wishlist i{
+    color: var(--grey);
+    font-size: 20px;
+    cursor: pointer;
+}
+.menu_section .wishlist i:hover{
+    color: red;
+    
+}
+.menu_section .card-title{
+    font-family: var(--oswald-font);
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+
+}
+.menu_section .menu_price{
+    background-color: var(--bg-coffee);
+    display: inline-block;
+    padding: 7px, 12px;
+}
+
+.menu_section .menu_price h5{
+    color: var(--yellow);
+    font-size: 1rem;
+}
+
+.menu_section .add_to_cart a{
+    background-color: var(--yellow);
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 700;
+    padding: 8px 14px;
+    border-radius: 4px;
+    opacity: 1;
+    transform: translateY(100px);
+    transition: all 500ms ease-in-out;
+    
+}
+.menu_section .card:hover .card-img-top{
+    transform: scale(1.1);
+}
+
+.menu_section .card:hover .add_to_cart a{
+    transform: translate(0px);
+    opacity: 1;
+}

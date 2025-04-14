@@ -52,7 +52,7 @@ header .nav-link{
 }
 
 header .sticky .nav-link{
-    color: var(--light-white);
+    color: var(--black);
 }
 
 header .nav-link:hover{
